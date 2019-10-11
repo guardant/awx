@@ -396,7 +396,7 @@ metadata:
   labels:
     name: {{ kubernetes_deployment_name }}-web-svc
 spec:
-  type: "NodePort"
+  type: NodePort
   ports:
     - name: http
       port: 80
@@ -412,7 +412,7 @@ metadata:
   labels:
     name: {{ kubernetes_deployment_name }}-rmq-mgmt
 spec:
-  type: ClusterIP
+  type: NodePort
   ports:
     - name: rmqmgmt
       port: 15672
@@ -437,7 +437,11 @@ spec:
   - host: {{ kubernetes_ingress_hostname }}
     http:
       paths:
-      - path: /
+      - path: /*
+        backend:
+          serviceName: ssl-redirect
+          servicePort: use-annotation  
+      - path: /*
         backend:
           serviceName: {{ kubernetes_deployment_name }}-web-svc
           servicePort: 80
