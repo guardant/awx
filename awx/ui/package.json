@@ -114,7 +114,7 @@
     "babel-polyfill": "^6.26.0",
     "bootstrap": "^4.3.1",
     "bootstrap-datepicker": "^1.8.0",
-    "codemirror": "^5.17.0",
+    "codemirror": "^5.65.0",
     "components-font-awesome": "^4.6.1",
     "d3": "^3.5.4",
     "dagre": "^0.8.2",
