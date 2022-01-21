@@ -110,7 +110,7 @@
     "angular-scheduler": "git+https://git@github.com/ansible/angular-scheduler#v0.3.3",
     "angular-tz-extensions": "git+https://git@github.com/ansible/angular-tz-extensions#v0.5.2",
     "angular-xeditable": "~0.8.0",
-    "ansi-to-html": "^0.6.3",
+    "ansi-to-html": "^0.7.2",
     "babel-polyfill": "^6.26.0",
     "bootstrap": "^4.3.1",
     "bootstrap-datepicker": "^1.8.0",
