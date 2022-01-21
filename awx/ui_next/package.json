@@ -63,7 +63,7 @@
     "@patternfly/react-tokens": "^2.6.16",
     "ansi-to-html": "^0.6.11",
     "axios": "^0.18.1",
-    "codemirror": "^5.47.0",
+    "codemirror": "^5.65.0",
     "formik": "^1.5.1",
     "has-ansi": "^3.0.0",
     "html-entities": "^1.2.1",
